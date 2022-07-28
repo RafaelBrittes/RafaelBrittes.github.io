@@ -1,5 +1,5 @@
 import NavBar from "../nav-bar/nav-bar.component";
-import { Hero } from "./home.component";
+import { Hero, SideText } from "./home.component";
 
 function Home() {
   return (
@@ -16,6 +16,15 @@ function Home() {
           alt="test"
         />
       </Hero>
+      <SideText>
+        <h4>COMO EU <span>POSSO TE AJUDAR?</span></h4>
+        <p>Algumas de minhas habilidades</p>
+      </SideText>
+
+      <SideText>
+        <h4>ALGUNS PROJETOS <span>DESENVOLVIDOS POR MIM</span></h4>
+        <p>Projects &#9881;</p>
+      </SideText>
     </>
   );
 }
