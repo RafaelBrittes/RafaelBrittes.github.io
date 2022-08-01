@@ -21,5 +21,11 @@ export const NavBarContainer = styled.nav`
       cursor: pointer;
       background-color: #ff480052;
     }
+    @media (max-width: 950px) {
+      padding: 5px 5px 20px 5px;
+    }
+    @media (max-width: 850px) {
+      display: none;
+    }
   }
 `;

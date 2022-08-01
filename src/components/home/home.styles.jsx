@@ -1,32 +1,75 @@
-import NavBar from "../nav-bar/nav-bar.component";
-import { Hero, SideText } from "./home.component";
+import styled from "styled-components";
 
-function Home() {
-  return (
-    <>
-      <NavBar />
-      <Hero>
-        <p>
-          Olá, eu sou Rafel Brittes o/ e et dolore magnam aliquam quaerat
-          voluptatem. Ut enim ad minima veniam magnam aliquam quaerat
-          voluptatem. Ut enim ad minima veniam
-        </p>
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/5969/5969113.png"
-          alt="test"
-        />
-      </Hero>
-      <SideText>
-        <h4>COMO EU <span>POSSO TE AJUDAR?</span></h4>
-        <p>Algumas de minhas habilidades</p>
-      </SideText>
+export const Hero = styled.div`
+  margin: 100px;
+  display: flex;
+  align-items: center;
+  color: #ffff;
+  p {
+    border: 1px solid #ffffffa7;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    line-height: 30px;
+  }
+  img {
+    padding-left: 20px;
+    max-width: 30vh;
+    max-height: 30vh;
+    min-width: 20vh;
+    min-height: 20vh;
+  }
+  @media (max-width: 750px) {
+    margin: 40px;
+    p {
+      line-height: 20px;
+      padding: 20px;
+    }
+    img {
+      padding-left: 10px;
+      max-width: 30vh;
+      max-height: 30vh;
+      min-width: 15vh;
+      min-height: 15vh;
+    }
+  }
+  @media (max-width: 460px) {
+    margin: 15px;
+    img {
+      padding-left: 0px;
+    }
+  }
+`;
 
-      <SideText>
-        <h4>ALGUNS PROJETOS <span>DESENVOLVIDOS POR MIM</span></h4>
-        <p>Projects &#9881;</p>
-      </SideText>
-    </>
-  );
-}
+export const SideText = styled.div`
+  margin-left: 60px;
+  color: #ff4800;
+  h4 {
+    font-weight: 400;
+    margin: 0px;
+  }
+  span {
+    font-weight: bold;
+  }
+  p {
+    margin-left: 20px;
+    font-weight: 600;
+    color: #ffff;
+  }
+  @media (max-width: 460px) {
+    margin: 15px;
+    img {
+      padding-left: 0px;
+    }
+  }
+`;
 
-export default Home;
+export const IconContainer = styled.div`
+  margin: 50px 0px 50px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  place-items: center;
+  @media (max-width: 450px) {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+`;
