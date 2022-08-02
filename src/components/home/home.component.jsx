@@ -2,7 +2,6 @@ import NavBar from "../nav-bar/nav-bar.component";
 import Projects from "../projects/projects.component";
 import Skills from "../skills/skills.component";
 import {
-  Centerr,
   ContactButton,
   Hero,
   IconContainer,
