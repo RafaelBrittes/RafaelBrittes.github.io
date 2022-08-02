@@ -44,8 +44,8 @@ export const Hero = styled.div`
 `;
 
 export const ContactButton = styled.button`
-  margin-left: 40%;
-  margin-right: 40%;
+  margin-left: 20%;
+  margin-right: 20%;
   margin-bottom: 80px;
   border-radius: 15px;
   font-size: 20px;

@@ -10,6 +10,7 @@ export const NavBarContainer = styled.nav`
     color: white;
     @media (max-width: 950px) {
     gap: 40px;
+    padding: 0px;
     }
   }
   a {
