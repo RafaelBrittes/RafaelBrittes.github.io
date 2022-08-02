@@ -1,14 +1,16 @@
 import styled from "styled-components";
 
 export const Hero = styled.div`
-  margin: 25px 25px 10px 25px;
+  margin: 25px;
   display: flex;
+place-content: center;
   align-items: center;
   color: #ffff;
   p {
     border: 1px solid #ffffffa7;
     border-radius: 15px;
     padding: 30px;
+    align-items: center;
     text-align: center;
     line-height: 30px;
     font-size: 25px;

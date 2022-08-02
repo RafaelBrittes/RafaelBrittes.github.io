@@ -35,24 +35,28 @@ function Home() {
       img: ecommerce,
       name: "E-commerce",
       tags: ["React"],
+      href: "https://github.com/RafaelBrittes/E-commerce-with-React"
     },
     {
       id: 2,
       img: tagApi,
       name: "Tag management API",
       tags: ["PHP", "Laravel", "Docker", "MySql"],
+      href: "https://github.com/RafaelBrittes/Product-management"
     },
     {
       id: 3,
       img: tagFront,
       name: "Tag management Front end",
       tags: ["React"],
+      href: "https://github.com/RafaelBrittes/Product-management-front"
     },
     {
       id: 4,
       img: portifolio,
       name: "Portifólio",
       tags: ["React"],
+      href: "https://github.com/RafaelBrittes/RafaelBrittes.github.io"
     },
   ];
 

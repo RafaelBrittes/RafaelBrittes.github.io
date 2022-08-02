@@ -13,6 +13,15 @@ export const ProjectsCard = styled.div`
   justify-content: center;
   color: #fff;
   font-size: 20px;
+  a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: center;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+  }
   p {
     margin: 3px;
   }
@@ -33,7 +42,7 @@ export const ProjectsCard = styled.div`
     height: 80%;
     border-radius: 15px;
     filter: grayscale(80%);
-    transition: .8s ease-in-out;
+    transition: 0.8s ease-in-out;
     :hover {
       filter: grayscale(0%);
     }
