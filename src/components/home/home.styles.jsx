@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Hero = styled.div`
-  margin: 25px;
+  margin: 15px 25px 5px 25px;
   display: flex;
 place-content: center;
   align-items: center;
@@ -48,7 +48,7 @@ export const ContactButton = styled.button`
   margin-right: 40%;
   margin-bottom: 80px;
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 600;
   letter-spacing: 1px;
   padding: 13px 50px 13px;
   outline: 0;
@@ -58,7 +58,7 @@ export const ContactButton = styled.button`
   background-color: rgba(0, 0, 0, 0); 
   ::after {
     content: "";
-    background-color: #ffe54c;
+    background-color: #ff4800;;
     width: 100%;
     z-index: -1;
     position: absolute;

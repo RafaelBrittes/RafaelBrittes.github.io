@@ -8,10 +8,13 @@ export const NavBarContainer = styled.nav`
     gap: 80px;
     place-content: center;
     color: white;
+    @media (max-width: 950px) {
+    gap: 50px;
+    }
   }
 
   li {
-    padding: 5px 15px 20px 15px;
+    padding: 5px 15px 15px 15px;
     transition-duration: 0.4s;
     text-underline-offset: 5px;
     border-radius: 10px;
@@ -19,10 +22,11 @@ export const NavBarContainer = styled.nav`
     &:hover {
       text-decoration-line: underline;
       cursor: pointer;
-      background-color: #ff480052;
+      background-color: #ff4800;
     }
     @media (max-width: 950px) {
-      padding: 5px 5px 20px 5px;
+    gap: 60px;
+    padding: 5px 15px 15px 15px;
     }
     @media (max-width: 850px) {
       display: none;
