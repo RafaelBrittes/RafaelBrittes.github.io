@@ -1,6 +1,19 @@
 import NavBar from "../nav-bar/nav-bar.component";
+import Projects from "../projects/projects.component";
 import Skills from "../skills/skills.component";
-import { Hero, IconContainer, SideText } from "./home.styles";
+import {
+  ContactButton,
+  Hero,
+  IconContainer,
+  ProjectsContainer,
+  SideText,
+} from "./home.styles";
+import heroImg from "../../assets/heroImg.PNG";
+import ecommerce from "../../assets/ecommerce.PNG";
+import tagApi from "../../assets/tag api.PNG";
+import tagFront from "../../assets/tag front.PNG";
+import portifolio from "../../assets/portifolio.PNG";
+
 
 function Home() {
   const skills = [
@@ -16,21 +29,46 @@ function Home() {
     "SQL",
   ];
 
+  const projects = [
+    {
+      id: 1,
+      img: ecommerce,
+      name: "E-commerce",
+      tags: ["React"],
+    },
+    {
+      id: 2,
+      img: tagApi,
+      name: "Tag management API",
+      tags: ["PHP", "Laravel", "Docker", "MySql"],
+    },
+    {
+      id: 3,
+      img: tagFront,
+      name: "Tag management Front end",
+      tags: ["React"],
+    },
+    {
+      id: 4,
+      img: portifolio,
+      name: "Portifólio",
+      tags: ["React"],
+    },
+  ];
+
   return (
     <>
       <NavBar />
       <Hero>
         <p>
-          Olá, eu sou Rafel Brittes o/ e et dolore magnam aliquam quaerat
-          voluptatem. Ut enim ad minima veniam magnam aliquam quaerat
-          voluptatem. Ut enim ad minima venia ma veniam magnam aliquam quaerat
-          voluptatem. Ut enim ad minima veniam
+          Olá, me chamo Rafael Brittes, sou desenvolvedor full stack apaixonado
+          por tecnologia, robótica e games.
         </p>
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/5969/5969113.png"
-          alt="test"
-        />
+        <img src={heroImg} alt="test" />
+
       </Hero>
+      <ContactButton>Entre em contato</ContactButton>
+
       <SideText>
         <h4>
           COMO EU <span>POSSO TE AJUDAR?</span>
@@ -49,6 +87,12 @@ function Home() {
         </h4>
         <p>Projects &#9881;</p>
       </SideText>
+
+      <ProjectsContainer>
+        {projects.map((project) => (
+          <Projects key={project.id} props={project} />
+        ))}
+      </ProjectsContainer>
     </>
   );
 }

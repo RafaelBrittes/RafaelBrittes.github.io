@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Hero = styled.div`
-  margin: 100px;
+  margin: 25px 25px 10px 25px;
   display: flex;
   align-items: center;
   color: #ffff;
@@ -11,26 +11,26 @@ export const Hero = styled.div`
     padding: 30px;
     text-align: center;
     line-height: 30px;
+    font-size: 25px;
   }
   img {
     padding-left: 20px;
-    max-width: 30vh;
-    max-height: 30vh;
-    min-width: 20vh;
-    min-height: 20vh;
+    max-width: 50vh;
+    min-width: 25vh;
+    min-height: 25vh;
   }
   @media (max-width: 750px) {
     margin: 40px;
     p {
       line-height: 20px;
       padding: 20px;
+      font-size: 20px;
     }
     img {
-      padding-left: 10px;
+      padding-left: 0px;
       max-width: 30vh;
-      max-height: 30vh;
-      min-width: 15vh;
-      min-height: 15vh;
+      min-width: 25vh;
+      min-height: 25vh;
     }
   }
   @media (max-width: 460px) {
@@ -38,6 +38,37 @@ export const Hero = styled.div`
     img {
       padding-left: 0px;
     }
+  }
+`;
+
+export const ContactButton = styled.button`
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-bottom: 80px;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0); 
+  ::after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+
+  :hover::after {
+    top: 0px;
+    left: 0px;
   }
 `;
 
@@ -72,4 +103,14 @@ export const IconContainer = styled.div`
   @media (max-width: 450px) {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
+`;
+
+export const ProjectsContainer = styled.div`
+  margin: 30px 0px 30px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  place-items: center;
+  /* @media (max-width: 450px) {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }*/
 `;
