@@ -2,6 +2,7 @@ import NavBar from "../nav-bar/nav-bar.component";
 import Projects from "../projects/projects.component";
 import Skills from "../skills/skills.component";
 import {
+  Centerr,
   ContactButton,
   Hero,
   IconContainer,
@@ -13,7 +14,7 @@ import ecommerce from "../../assets/ecommerce.PNG";
 import tagApi from "../../assets/tag api.PNG";
 import tagFront from "../../assets/tag front.PNG";
 import portifolio from "../../assets/portifolio.PNG";
-
+import Contact from "../contact/contact.component";
 
 function Home() {
   const skills = [
@@ -35,49 +36,51 @@ function Home() {
       img: ecommerce,
       name: "E-commerce",
       tags: ["React"],
-      href: "https://github.com/RafaelBrittes/E-commerce-with-React"
+      href: "https://github.com/RafaelBrittes/E-commerce-with-React",
     },
     {
       id: 2,
       img: tagApi,
       name: "Tag management API",
       tags: ["PHP", "Laravel", "Docker", "MySql"],
-      href: "https://github.com/RafaelBrittes/Product-management"
+      href: "https://github.com/RafaelBrittes/Product-management",
     },
     {
       id: 3,
       img: tagFront,
       name: "Tag management Front end",
       tags: ["React"],
-      href: "https://github.com/RafaelBrittes/Product-management-front"
+      href: "https://github.com/RafaelBrittes/Product-management-front",
     },
     {
       id: 4,
       img: portifolio,
       name: "Portifólio",
       tags: ["React"],
-      href: "https://github.com/RafaelBrittes/RafaelBrittes.github.io"
+      href: "https://github.com/RafaelBrittes/RafaelBrittes.github.io",
     },
   ];
 
   return (
     <>
       <NavBar />
-      <Hero>
+      <Hero id="#hero">
         <p>
-          Olá, me chamo Rafael Brittes, sou desenvolvedor full stack apaixonado
-          por tecnologia, robótica e games.
+          Welcome! My name is Rafael Brittes, i am a software developer and this
+          is my portfolio website. Here you’ll can find my journey as a software
+          developer.
         </p>
         <img src={heroImg} alt="test" />
-
       </Hero>
-      <ContactButton>Entre em contato</ContactButton>
+      <a href="#contact">
+        <ContactButton>Contact</ContactButton>
+      </a>
 
-      <SideText>
+      <SideText id="skills">
         <h4>
-          COMO EU <span>POSSO TE AJUDAR?</span>
+          HOW CAN I <span>HELP YOU?</span>
         </h4>
-        <p>Algumas de minhas habilidades</p>
+        <p>Some of my skills</p>
       </SideText>
       <IconContainer>
         {skills.map((skill) => (
@@ -85,9 +88,9 @@ function Home() {
         ))}
       </IconContainer>
 
-      <SideText>
+      <SideText id="projects">
         <h4>
-          ALGUNS PROJETOS <span>DESENVOLVIDOS POR MIM</span>
+          SOME PROJECTS THAT <span>I'VE MADE</span>
         </h4>
         <p>Projects &#9881;</p>
       </SideText>
@@ -97,6 +100,10 @@ function Home() {
           <Projects key={project.id} props={project} />
         ))}
       </ProjectsContainer>
+
+      <section id="contact">
+        <Contact />
+      </section>
     </>
   );
 }

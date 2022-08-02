@@ -24,6 +24,25 @@ export const ProjectsCard = styled.div`
   }
   p {
     margin: 3px;
+    display: inline-block;
+    position: relative;
+    ::after {
+      content: "";
+      margin-bottom: -2px;
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #ff4800;
+      transform-origin: bottom right;
+      transition: transform 0.45s ease-out;
+    }
+    :hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
   }
   .tag {
     display: flex;
@@ -41,11 +60,6 @@ export const ProjectsCard = styled.div`
     width: 100%;
     height: 80%;
     border-radius: 15px;
-    filter: grayscale(80%);
-    transition: 0.8s ease-in-out;
-    :hover {
-      filter: grayscale(0%);
-    }
   }
 
   @media (max-width: 460px) {

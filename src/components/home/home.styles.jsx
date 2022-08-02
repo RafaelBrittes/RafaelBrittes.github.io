@@ -3,15 +3,15 @@ import styled from "styled-components";
 export const Hero = styled.div`
   margin: 15px 25px 5px 25px;
   display: flex;
-place-content: center;
+  place-content: center;
   align-items: center;
   color: #ffff;
   p {
     border: 1px solid #ffffffa7;
-    border-radius: 15px;
+    border-radius: 25px;
     padding: 30px;
     align-items: center;
-    text-align: center;
+    text-align: start;
     line-height: 30px;
     font-size: 25px;
   }
@@ -31,8 +31,8 @@ place-content: center;
     img {
       padding-left: 0px;
       max-width: 30vh;
-      min-width: 25vh;
-      min-height: 25vh;
+      min-width: 15vh;
+      min-height: 15vh;
     }
   }
   @media (max-width: 460px) {
@@ -47,25 +47,30 @@ export const ContactButton = styled.button`
   margin-left: 40%;
   margin-right: 40%;
   margin-bottom: 80px;
+  border-radius: 15px;
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 1px;
-  padding: 13px 50px 13px;
-  outline: 0;
+  padding: 10px 50px;
   border: 1px solid black;
   cursor: pointer;
   position: relative;
-  background-color: rgba(0, 0, 0, 0); 
+  background-color: rgba(0, 0, 0, 0);
+  a{
+    text-decoration: none;
+    color: black;
+  }
   ::after {
     content: "";
-    background-color: #ff4800;;
+    background-color: #ff4800;
     width: 100%;
+    border-radius: 15px;
     z-index: -1;
     position: absolute;
     height: 100%;
     top: 7px;
     left: 7px;
-    transition: 0.2s;
+    transition: 0.3s;
   }
 
   :hover::after {
@@ -112,7 +117,7 @@ export const ProjectsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   place-items: center;
-  /* @media (max-width: 450px) {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  }*/
+  @media (max-width: 450px) {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
 `;
