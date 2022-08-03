@@ -33,7 +33,7 @@ export const Hero = styled.div`
     min-height: 25vh;
   }
   @media (max-width: 750px) {
-    margin: 40px;
+    margin: 20px;
     p {
       line-height: 20px;
       padding: 20px;
@@ -46,46 +46,58 @@ export const Hero = styled.div`
       min-height: 15vh;
     }
   }
-  @media (max-width: 460px) {
+  @media (max-width: 560px) {
     margin: 15px;
+    padding:10px;
     img {
       width: 20vh;
       height: 20vh;
       margin-bottom: -20px;
       padding-left: 0px;
     }
+    p {
+      line-height: 20px;
+      padding: 10px;
+      font-size: 20px;
+    }
   }
 `;
 
-export const ContactButton = styled.button`
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 80px;
-  border-radius: 15px;
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  padding: 10px 50px;
-  border: 1px solid black;
-  cursor: pointer;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  ::after {
-    content: "";
-    background-color: ${(props) => props.theme.strongOrange};
-    width: 100%;
+export const ContactButton = styled.div`
+  display: flex;
+  justify-content: center;
+  a {
+    color: black;
+    text-decoration: none;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 80px;
     border-radius: 15px;
-    z-index: -1;
-    position: absolute;
-    height: 100%;
-    top: 7px;
-    left: 7px;
-    transition: 0.3s;
-  }
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 50px;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    ::after {
+      content: "";
+      background-color: ${(props) => props.theme.strongOrange};
+      width: 100%;
+      border-radius: 15px;
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      top: 7px;
+      left: 7px;
+      transition: 0.3s;
+    }
 
-  :hover::after {
-    top: 0px;
-    left: 0px;
+    :hover::after {
+      top: 0px;
+      left: 0px;
+    }
   }
 `;
 
@@ -130,4 +142,9 @@ export const ProjectsContainer = styled.div`
   @media (max-width: 450px) {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
+`;
+
+export const Svg = styled.div`
+  display: flex;
+  margin-top: -60px;
 `;

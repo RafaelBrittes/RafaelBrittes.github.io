@@ -7,6 +7,7 @@ import {
   IconContainer,
   ProjectsContainer,
   SideText,
+  Svg,
 } from "./home.styles";
 import heroImg from "../../assets/heroImg.PNG";
 import ecommerce from "../../assets/ecommerce.PNG";
@@ -71,9 +72,10 @@ function Home() {
         </p>
         <img src={heroImg} alt="Dev" />
       </Hero>
-      <a href="#contact">
-        <ContactButton>Contact</ContactButton>
-      </a>
+
+      <ContactButton>
+        <a href="#contact">Contact</a>
+      </ContactButton>
 
       <SideText id="skills">
         <h4>
@@ -103,6 +105,16 @@ function Home() {
       <section id="contact">
         <Contact />
       </section>
+
+      <Svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#350267"
+            fill-opacity="1"
+            d="M0,224L720,288L1440,256L1440,320L720,320L0,320Z"
+          ></path>
+        </svg>
+      </Svg>
     </>
   );
 }
