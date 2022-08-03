@@ -1,12 +1,28 @@
 import styled from "styled-components";
 
 export const Hero = styled.div`
-  margin: 15px 25px 5px 25px;
+  margin: 105px 25px 25px 25px;
   display: flex;
   place-content: center;
   align-items: center;
   color: ${(props) => props.theme.textWhiteCollor};
-  padding: 0px 100px;
+
+  p {
+    max-width: 600px;
+    border: 1px solid #ffffffa7;
+    border-radius: 25px;
+    padding: 60px;
+    align-items: center;
+    text-align: start;
+    line-height: 45px;
+    font-size: 26px;
+  }
+  img {
+    padding-left: 40px;
+    max-width: 50vh;
+    min-width: 25vh;
+    min-height: 25vh;
+  }
   @media (max-width: 900px) {
     display: flex;
     flex-direction: column;
@@ -16,21 +32,6 @@ export const Hero = styled.div`
     img {
       order: 1;
     }
-  }
-  p {
-    border: 1px solid #ffffffa7;
-    border-radius: 25px;
-    padding: 30px;
-    align-items: center;
-    text-align: start;
-    line-height: 30px;
-    font-size: 25px;
-  }
-  img {
-    padding-left: 20px;
-    max-width: 50vh;
-    min-width: 25vh;
-    min-height: 25vh;
   }
   @media (max-width: 750px) {
     margin: 20px;
@@ -46,9 +47,9 @@ export const Hero = styled.div`
       min-height: 15vh;
     }
   }
-  @media (max-width: 560px) {
+  @media (max-width: 660px) {
     margin: 15px;
-    padding:10px;
+    padding: 10px;
     img {
       width: 20vh;
       height: 20vh;
@@ -73,10 +74,10 @@ export const ContactButton = styled.div`
     margin-right: 20%;
     margin-bottom: 80px;
     border-radius: 15px;
-    font-size: 20px;
+    font-size: 27px;
     font-weight: 600;
     letter-spacing: 1px;
-    padding: 10px 50px;
+    padding: 20px 70px;
     border: 1px solid black;
     cursor: pointer;
     position: relative;
@@ -104,6 +105,7 @@ export const ContactButton = styled.div`
 export const SideText = styled.div`
   margin-left: 60px;
   color: ${(props) => props.theme.strongOrange};
+  font-size: 20px;
   h4 {
     font-weight: 400;
     margin: 0px;

@@ -16,6 +16,7 @@ export const NavBarContainer = styled.nav`
     padding: 5px 15px 15px 15px;
     transition-duration: 0.4s;
     text-underline-offset: 5px;
+    font-size: 20px;
     border-radius: 10px;
     text-decoration: none;
     color: ${(props) => props.theme.textWhiteCollor};
