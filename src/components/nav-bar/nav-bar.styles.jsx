@@ -11,6 +11,9 @@ export const NavBarContainer = styled.nav`
       gap: 40px;
       padding: 0px;
     }
+    @media (max-width: 750px) {
+      gap: 20px;
+    }
   }
   a {
     padding: 5px 15px 15px 15px;
@@ -27,9 +30,7 @@ export const NavBarContainer = styled.nav`
     }
     @media (max-width: 950px) {
       padding: 5px 5px 15px 5px;
-    }
-    @media (max-width: 750px) {
-      padding: 5px 0px 15px 0px;
+      font-size: 18px;
     }
   }
 `;
