@@ -8,17 +8,16 @@ export const ProjectsCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #060220;
+  background-color: ${(props) => props.theme.mediumDarkPurple};
   border: 1px solid #ffffff8c;
   justify-content: center;
-  color: #fff;
   font-size: 20px;
   a {
     display: flex;
     flex-direction: column;
     text-decoration: none;
     align-items: center;
-    color: #fff;
+    color:  ${(props) => props.theme.textWhiteCollor};
     height: 100%;
     width: 100%;
   }
@@ -35,7 +34,7 @@ export const ProjectsCard = styled.div`
       height: 2px;
       bottom: 0;
       left: 0;
-      background-color: #ff4800;
+      background-color: ${(props) => props.theme.strongOrange};
       transform-origin: bottom right;
       transition: transform 0.45s ease-out;
     }
@@ -50,7 +49,7 @@ export const ProjectsCard = styled.div`
 
     span {
       padding: 7px;
-      background-color: #161235;
+      background-color:${(props) => props.theme.purple};
       border-radius: 10px;
       margin: 5px;
     }
@@ -67,7 +66,6 @@ export const ProjectsCard = styled.div`
     width: 220px;
     font-size: 15px;
     span {
-      background-color: #161235;
       border-radius: 10px;
       margin: 5px;
       font-size: 11px;

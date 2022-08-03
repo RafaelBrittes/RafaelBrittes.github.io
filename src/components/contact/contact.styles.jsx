@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContactComponent = styled.div`
   text-align: center;
   font-size: 24px;
-  color: white;
+  color: ${(props) => props.theme.textWhiteCollor};
   padding: 150px 150px 50px 150px;
   @media (max-width: 860px) {
     padding: 30px;
@@ -13,11 +13,11 @@ export const ContactComponent = styled.div`
     font-weight: 400;
     font-size: 50px;
     margin: 0px;
-    color: #ff4800;
+    color: ${(props) => props.theme.strongOrange};
   }
 
   a {
-    color: #ff4800;
+    color: ${(props) => props.theme.strongOrange};
     font-weight: 700;
     font-size: 26px;
     line-height: 10px;
@@ -25,7 +25,7 @@ export const ContactComponent = styled.div`
 `;
 
 export const IconsDiv = styled.div`
-  color: #ff4800;
+  color: ${(props) => props.theme.strongOrange};
   svg {
     margin-top: 90px;
     padding: 20px;

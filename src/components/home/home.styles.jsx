@@ -5,7 +5,8 @@ export const Hero = styled.div`
   display: flex;
   place-content: center;
   align-items: center;
-  color: #ffff;
+  color: ${(props) => props.theme.textWhiteCollor};
+  padding: 0px 100px;
   @media (max-width: 900px) {
     display: flex;
     flex-direction: column;
@@ -69,13 +70,9 @@ export const ContactButton = styled.button`
   cursor: pointer;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
-  a {
-    text-decoration: none;
-    color: black;
-  }
   ::after {
     content: "";
-    background-color: #ff4800;
+    background-color: ${(props) => props.theme.strongOrange};
     width: 100%;
     border-radius: 15px;
     z-index: -1;
@@ -94,7 +91,7 @@ export const ContactButton = styled.button`
 
 export const SideText = styled.div`
   margin-left: 60px;
-  color: #ff4800;
+  color: ${(props) => props.theme.strongOrange};
   h4 {
     font-weight: 400;
     margin: 0px;
@@ -105,7 +102,7 @@ export const SideText = styled.div`
   p {
     margin-left: 20px;
     font-weight: 600;
-    color: #ffff;
+    color: ${(props) => props.theme.textWhiteCollor};
   }
   @media (max-width: 460px) {
     margin: 15px;

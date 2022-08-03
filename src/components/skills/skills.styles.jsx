@@ -8,10 +8,10 @@ export const IconCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #060220;
+  background-color: ${props => props.theme.mediumDarkPurple};
   border: 1px solid #ffffff8c;
   justify-content: center;
-  color: #fff;
+  color: ${props => props.theme.textWhiteCollor};
   font-size: 26px;
 
   .FontAwesomeIcon {
