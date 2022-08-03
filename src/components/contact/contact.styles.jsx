@@ -35,5 +35,9 @@ export const IconsDiv = styled.div`
     :hover {
       filter: invert(0.9) sepia(1) hue-rotate(1deg) saturate(7) brightness(2);
     }
+    @media (max-width: 360px){
+      padding: 17px;
+      margin-top: 50px;
+    }
   }
 `;

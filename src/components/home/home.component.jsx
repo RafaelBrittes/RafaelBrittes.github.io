@@ -66,7 +66,7 @@ function Home() {
       <NavBar />
       <Hero id="#hero">
         <p>
-          Welcome! My name is Rafael Brittes, i am a software developer and this
+          Welcome! My name is Rafael Brittes, i am a software developer based in Brazil and this
           is my portfolio website. Here you’ll can find my journey as a software
           developer.
         </p>
