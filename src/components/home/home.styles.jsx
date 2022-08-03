@@ -6,6 +6,16 @@ export const Hero = styled.div`
   place-content: center;
   align-items: center;
   color: #ffff;
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    p {
+      order: 2;
+    }
+    img {
+      order: 1;
+    }
+  }
   p {
     border: 1px solid #ffffffa7;
     border-radius: 25px;
@@ -38,6 +48,9 @@ export const Hero = styled.div`
   @media (max-width: 460px) {
     margin: 15px;
     img {
+      width: 20vh;
+      height: 20vh;
+      margin-bottom: -20px;
       padding-left: 0px;
     }
   }
@@ -56,7 +69,7 @@ export const ContactButton = styled.button`
   cursor: pointer;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
-  a{
+  a {
     text-decoration: none;
     color: black;
   }

@@ -69,7 +69,7 @@ function Home() {
           is my portfolio website. Here you’ll can find my journey as a software
           developer.
         </p>
-        <img src={heroImg} alt="test" />
+        <img src={heroImg} alt="Dev" />
       </Hero>
       <a href="#contact">
         <ContactButton>Contact</ContactButton>
