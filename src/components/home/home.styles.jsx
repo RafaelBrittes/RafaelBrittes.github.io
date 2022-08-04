@@ -23,18 +23,7 @@ export const Hero = styled.div`
     min-width: 25vh;
     min-height: 25vh;
   }
-  @media (max-width: 600px) {
-    display: flex;
-    flex-direction: column;
-    p {
-      order: 2;
-      margin-top: 50px;
-    }
-    img {
-      order: 1;
-      margin-top: 50px;
-    }
-  }
+
   @media (max-width: 750px) {
     margin: 20px;
     p {
@@ -49,19 +38,23 @@ export const Hero = styled.div`
       min-height: 15vh;
     }
   }
-  @media (max-width: 660px) {
-    margin: 15px;
-    padding: 10px;
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    margin: 45px;
+    p {
+      order: 2;
+      margin-top: 50px;
+      line-height: 24px;
+      padding: 10px;
+      font-size: 20px;
+    }
     img {
+      order: 1;
+      margin-top: 10px;
       width: 20vh;
       height: 20vh;
       margin-bottom: -20px;
-      padding-left: 0px;
-    }
-    p {
-      line-height: 22px;
-      padding: 10px;
-      font-size: 20px;
     }
   }
 `;
@@ -70,7 +63,7 @@ export const ContactButton = styled.div`
   display: flex;
   justify-content: center;
   a {
-    color: black;
+    color: white;
     text-decoration: none;
     margin-left: 20%;
     margin-right: 20%;
@@ -120,8 +113,11 @@ export const SideText = styled.div`
     font-weight: 600;
     color: ${(props) => props.theme.textWhiteCollor};
   }
-  @media (max-width: 460px) {
+  @media (max-width: 480px) {
     margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     img {
       padding-left: 0px;
     }
@@ -129,7 +125,7 @@ export const SideText = styled.div`
 `;
 
 export const IconContainer = styled.div`
-  margin: 50px 0px 50px 0px;
+  margin: 50px 15px 50px 15px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   place-items: center;
