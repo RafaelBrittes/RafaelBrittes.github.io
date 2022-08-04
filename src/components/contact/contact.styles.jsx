@@ -10,10 +10,10 @@ export const ContactComponent = styled.div`
   }
 
   h3 {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 50px;
     margin: 0px;
-    color: ${(props) => props.theme.strongOrange};
+    color: ${(props) => props.theme.lightPurple};
   }
 
   a {

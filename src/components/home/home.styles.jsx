@@ -23,14 +23,16 @@ export const Hero = styled.div`
     min-width: 25vh;
     min-height: 25vh;
   }
-  @media (max-width: 900px) {
+  @media (max-width: 600px) {
     display: flex;
     flex-direction: column;
     p {
       order: 2;
+      margin-top: 50px;
     }
     img {
       order: 1;
+      margin-top: 50px;
     }
   }
   @media (max-width: 750px) {
@@ -57,7 +59,7 @@ export const Hero = styled.div`
       padding-left: 0px;
     }
     p {
-      line-height: 20px;
+      line-height: 22px;
       padding: 10px;
       font-size: 20px;
     }
@@ -77,14 +79,14 @@ export const ContactButton = styled.div`
     font-size: 27px;
     font-weight: 600;
     letter-spacing: 1px;
-    padding: 20px 70px;
+    padding: 10px 50px;
     border: 1px solid black;
     cursor: pointer;
     position: relative;
     background-color: rgba(0, 0, 0, 0);
     ::after {
       content: "";
-      background-color: ${(props) => props.theme.strongOrange};
+      background-color: ${(props) => props.theme.lightPurple};
       width: 100%;
       border-radius: 15px;
       z-index: -1;
