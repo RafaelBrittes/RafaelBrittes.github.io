@@ -66,9 +66,9 @@ function Home() {
       <NavBar />
       <Hero id="#hero">
         <p>
-          Welcome! My name is Rafael Brittes, i am a software developer based in Brazil and this
-          is my portfolio website. Here you’ll can find my journey as a software
-          developer.
+          Welcome! My name is Rafael Brittes, i am a software developer based in
+          Brazil and this is my portfolio website. Here you’ll can find my
+          journey as a software developer.
         </p>
         <img src={heroImg} alt="Dev" />
       </Hero>
@@ -76,6 +76,16 @@ function Home() {
       <ContactButton>
         <a href="#contact">Contact</a>
       </ContactButton>
+
+      <Svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#161235"
+            fill-opacity="1"
+            d="M0,64L80,80C160,96,320,128,480,122.7C640,117,800,75,960,69.3C1120,64,1280,96,1360,112L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+          ></path>
+        </svg>
+      </Svg>
 
       <SideText id="skills">
         <h4>
@@ -101,6 +111,16 @@ function Home() {
           <Projects key={project.id} props={project} />
         ))}
       </ProjectsContainer>
+
+      <Svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#161235"
+            fill-opacity="1"
+            d="M0,96L60,117.3C120,139,240,181,360,202.7C480,224,600,224,720,202.7C840,181,960,139,1080,128C1200,117,1320,139,1380,149.3L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+          ></path>
+        </svg>
+      </Svg>
 
       <section id="contact">
         <Contact />

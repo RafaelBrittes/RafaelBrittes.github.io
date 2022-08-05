@@ -98,10 +98,11 @@ export const ContactButton = styled.div`
 `;
 
 export const SideText = styled.div`
-  margin-left: 60px;
+  padding: 25px 0px 0px 60px;
   color: ${(props) => props.theme.strongOrange};
-  font-size: 20px;
+  background-color: #161235;
   h4 {
+    font-size: 23px;
     font-weight: 400;
     margin: 0px;
   }
@@ -109,12 +110,14 @@ export const SideText = styled.div`
     font-weight: bold;
   }
   p {
+    font-size: 20px;
     margin-left: 20px;
     font-weight: 600;
     color: ${(props) => props.theme.textWhiteCollor};
+    margin-bottom: 0px;
   }
   @media (max-width: 480px) {
-    margin: 15px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,20 +128,23 @@ export const SideText = styled.div`
 `;
 
 export const IconContainer = styled.div`
-  margin: 50px 15px 50px 15px;
+  padding: 50px 15px 50px 15px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   place-items: center;
+  background-color: #161235;
   @media (max-width: 450px) {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
 `;
 
 export const ProjectsContainer = styled.div`
-  margin: 30px 0px 30px 0px;
+  padding: 30px 0px 30px 0px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   place-items: center;
+  background-color: #161235;
+
   @media (max-width: 450px) {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
@@ -147,4 +153,5 @@ export const ProjectsContainer = styled.div`
 export const Svg = styled.div`
   display: flex;
   margin-top: -60px;
+  margin-bottom: -60px;
 `;

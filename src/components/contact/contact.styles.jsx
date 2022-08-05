@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const ContactComponent = styled.div`
+  display: flex;
+  flex-direction: column;
   text-align: center;
   font-size: 24px;
   color: ${(props) => props.theme.textWhiteCollor};
@@ -10,10 +12,16 @@ export const ContactComponent = styled.div`
   }
 
   h3 {
+    align-self: center;
     font-weight: 500;
     font-size: 50px;
-    margin: 0px;
-    color: ${(props) => props.theme.lightPurple};
+    padding: 0px 25px;
+    color: ${(props) => props.theme.textWhiteCollor};
+    background-color: ${(props) => props.theme.lightPurple};
+    border-radius: 20px 5px 20px 5px;
+    @media (max-width: 560px) {
+      font-size: 40px;
+    }
   }
 
   a {
@@ -35,7 +43,7 @@ export const IconsDiv = styled.div`
     :hover {
       filter: invert(0.9) sepia(1) hue-rotate(1deg) saturate(7) brightness(2);
     }
-    @media (max-width: 360px){
+    @media (max-width: 360px) {
       padding: 17px;
       margin-top: 50px;
     }
