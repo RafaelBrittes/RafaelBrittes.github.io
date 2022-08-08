@@ -131,13 +131,10 @@ export const SideText = styled.div`
 
 export const IconContainer = styled.div`
   padding: 50px 15px 50px 15px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  place-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: #161235;
-  @media (max-width: 450px) {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  }
 `;
 
 export const ProjectsContainer = styled.div`

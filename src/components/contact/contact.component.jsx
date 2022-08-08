@@ -53,17 +53,18 @@ function Contact() {
       <ContactDesktopSideText>
         <h3>Contact me</h3>
         <p>
-          The best way to reach me is by email on <br />
-          <a href="mailto: rafael-brittes@hotmail.com">
-            Rafael-Brittes@hotmail.com
-          </a>{" "}
-          <br />
-          in the socials below or using the form aside.
-        </p>
-        <p>
-          However, if you have a question or want to talk, don't hesitate to
+          If you have a question or want to talk, don't hesitate to
           contact me.
         </p>
+        <p>
+          Feel free to use the form aside to contact me or mail me in <br />{" "}
+          <a href="mailto: rafael-brittes@hotmail.com">
+            Rafael-Brittes@hotmail.com
+          </a>
+          .
+          <br /> You can reach me also in the socials below.
+        </p>
+
         <IconsDiv>
           {icons.map((icon) => (
             <a href={icon.href} key={icon.id}>
