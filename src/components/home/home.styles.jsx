@@ -151,7 +151,6 @@ export const ProjectsContainer = styled.div`
 `;
 
 export const Svg = styled.div`
-  display: flex;
   margin-top: -60px;
   margin-bottom: -60px;
 `;
