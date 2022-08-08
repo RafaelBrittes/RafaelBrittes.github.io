@@ -4,6 +4,7 @@ export const NavBarContainer = styled.nav`
   ul {
     margin-top: 30px;
     display: flex;
+    justify-content: center;
     list-style: none;
     gap: 80px;
     place-content: center;

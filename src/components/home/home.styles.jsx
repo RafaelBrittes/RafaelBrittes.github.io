@@ -69,10 +69,10 @@ export const ContactButton = styled.div`
     margin-right: 20%;
     margin-bottom: 80px;
     border-radius: 15px;
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 600;
     letter-spacing: 1px;
-    padding: 10px 50px;
+    padding: 7px 30px;
     border: 1px solid black;
     cursor: pointer;
     position: relative;
