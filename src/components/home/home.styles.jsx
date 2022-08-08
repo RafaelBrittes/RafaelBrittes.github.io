@@ -65,28 +65,30 @@ export const ContactButton = styled.div`
   a {
     color: white;
     text-decoration: none;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 80px;
-    border-radius: 15px;
+    margin-bottom: 125px;
+    border-radius: 10px;
     font-size: 25px;
     font-weight: 600;
     letter-spacing: 1px;
-    padding: 7px 30px;
+    padding: 10px 40px;
     border: 1px solid black;
     cursor: pointer;
     position: relative;
     background-color: rgba(0, 0, 0, 0);
+    @media (max-width: 500px) {
+      padding: 5px 20px;
+      font-size: 20px;
+    }
     ::after {
       content: "";
       background-color: ${(props) => props.theme.lightPurple};
       width: 100%;
-      border-radius: 15px;
+      border-radius: 10px;
       z-index: -1;
       position: absolute;
       height: 100%;
-      top: 7px;
-      left: 7px;
+      top: 4px;
+      left: 4px;
       transition: 0.3s;
     }
 
@@ -150,7 +152,22 @@ export const ProjectsContainer = styled.div`
   }
 `;
 
+export const ContactSection = styled.section`
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px 0px 20px;
+  @media (max-width: 500px) {
+    padding: 40px 10px 5px 10px;
+  }
+`;
+
 export const Svg = styled.div`
   margin-top: -60px;
   margin-bottom: -60px;
+`;
+
+export const Footer = styled.div`
+  img{
+    width: 100%;
+  }
 `;

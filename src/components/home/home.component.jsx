@@ -8,6 +8,8 @@ import {
   ProjectsContainer,
   SideText,
   Svg,
+  ContactSection,
+  Footer,
 } from "./home.styles";
 import heroImg from "../../assets/heroImg.PNG";
 import ecommerce from "../../assets/ecommerce.PNG";
@@ -15,6 +17,7 @@ import tagApi from "../../assets/tag api.PNG";
 import tagFront from "../../assets/tag front.PNG";
 import portifolio from "../../assets/portifolio.PNG";
 import Contact from "../contact/contact.component";
+import footerWave from "../../assets/wave-haikei.svg";
 
 function Home() {
   const skills = [
@@ -122,19 +125,13 @@ function Home() {
         </svg>
       </Svg>
 
-      <section id="contact">
+      <ContactSection id="contact">
         <Contact />
-      </section>
+      </ContactSection>
 
-      <Svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#350267"
-            fill-opacity="1"
-            d="M0,224L720,288L1440,256L1440,320L720,320L0,320Z"
-          ></path>
-        </svg>
-      </Svg>
+      <Footer>
+        <img src={footerWave} alt="waves footer" />
+      </Footer>
     </>
   );
 }
