@@ -80,8 +80,8 @@ function Contact() {
       >
         <h3>Send me a message</h3>
         <input placeholder="Name" type="text" name="name" required />
-        <input placeholder="Email Adress" type="email" required />
-        <input placeholder="Subject" type="text" required />
+        <input placeholder="Email Adress" type="email" name="email" required />
+        <input placeholder="Subject" type="text" name="_subject" required />
         <input type="hidden" name="_captcha" value="false"></input>
         <input
           type="hidden"
