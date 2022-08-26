@@ -39,7 +39,7 @@ function Home() {
       id: 1,
       img: dashboard,
       name: "Dashboard",
-      tags: ["React, Laravel, Doker, MySql"],
+      tags: ["React", "Laravel", "Doker", "MySql"],
       href: "https://github.com/RafaelBrittes/Dashboard-Front",
     },
     {
