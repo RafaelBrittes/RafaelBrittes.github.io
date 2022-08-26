@@ -16,6 +16,7 @@ import ecommerce from "../../assets/ecommerce.PNG";
 import tagApi from "../../assets/tag api.PNG";
 import tagFront from "../../assets/tag front.PNG";
 import portifolio from "../../assets/portifolio.PNG";
+import dashboard from "../../assets/dashboard.PNG";
 import Contact from "../contact/contact.component";
 import footerWave from "../../assets/wave-haikei.svg";
 
@@ -36,27 +37,34 @@ function Home() {
   const projects = [
     {
       id: 1,
+      img: dashboard,
+      name: "Dashboard",
+      tags: ["React, Laravel, Doker, MySql"],
+      href: "https://github.com/RafaelBrittes/Dashboard-Front",
+    },
+    {
+      id: 2,
       img: ecommerce,
       name: "E-commerce",
       tags: ["React"],
       href: "https://github.com/RafaelBrittes/E-commerce-with-React",
     },
     {
-      id: 2,
+      id: 3,
       img: tagApi,
       name: "Tag management API",
       tags: ["PHP", "Laravel", "Docker", "MySql"],
       href: "https://github.com/RafaelBrittes/Product-management",
     },
     {
-      id: 3,
+      id: 4,
       img: tagFront,
       name: "Tag management Front end",
       tags: ["React"],
       href: "https://github.com/RafaelBrittes/Product-management-front",
     },
     {
-      id: 4,
+      id: 5,
       img: portifolio,
       name: "Portifólio",
       tags: ["React"],
